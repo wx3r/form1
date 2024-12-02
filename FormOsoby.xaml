@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="form.FormOsoby">
+
+    <StackLayout Padding="20">
+
+        <Label Text="Imię i nazwisko:" />
+        <Entry x:Name="ImieINazwiskoEntry" Placeholder="Wpisz imię i nazwisko"/>
+
+ 
+        <Label Text="Wiek:" />
+        <Entry x:Name="WiekEntry" Placeholder="Wpisz wiek" Keyboard="Numeric"/>
+
+        <Label Text="Adres:" />
+        <Editor x:Name="AdresEditor" Placeholder="Wpisz adres" HeightRequest="100"/>
+
+
+        <Label Text="Kontakt:" />
+        <Entry x:Name="KontaktEntry" Placeholder="Wpisz dane kontaktowe"/>
+
+        <Button Text="Zapisz dane" Clicked="OnZapiszButtonClicked"/>
+
+    </StackLayout>
+</ContentPage>
